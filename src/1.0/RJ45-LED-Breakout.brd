@@ -161,6 +161,7 @@
 <wire x1="1.27" y1="-1.27" x2="0" y2="0" width="0" layer="20" curve="-90"/>
 <text x="13.462" y="27.178" size="1.524" layer="22" font="vector" ratio="12" rot="MR0">RJ45-LED</text>
 <text x="3.556" y="16.51" size="1.524" layer="22" font="vector" ratio="12" rot="MR270">v1.0</text>
+<text x="13.208" y="-0.508" size="1.524" layer="22" font="vector" ratio="12" rot="MR0">Breakout</text>
 </plain>
 <libraries>
 <library name="LoganSmith-Connectors">
@@ -207,9 +208,9 @@
 <text x="6.975" y="3.525" size="1.016" layer="51" font="vector" ratio="12" align="center">-</text>
 <text x="0" y="-4.826" size="1.016" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
 <text x="-8.636" y="6.858" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-5.715" y="1.778" size="1.016" layer="51" font="vector" ratio="12" align="bottom-center">&gt;LED2_COLOR</text>
+<text x="-5.715" y="1.778" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">&gt;LED2_COLOR</text>
 <wire x1="-8.255" y1="-7.112" x2="8.255" y2="-7.112" width="0.127" layer="51"/>
-<text x="5.842" y="1.778" size="1.016" layer="51" font="vector" ratio="12" align="bottom-center">&gt;LED1_COLOR</text>
+<text x="5.842" y="1.778" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">&gt;LED1_COLOR</text>
 </package>
 <package name="SJ_2">
 <wire x1="0.37" y1="-0.916" x2="-1.27" y2="-0.916" width="0.125" layer="21"/>
@@ -300,6 +301,54 @@
 <wire x1="2" y1="-1" x2="2" y2="1" width="0.125" layer="39"/>
 <wire x1="2" y1="1" x2="-2" y2="1" width="0.125" layer="39"/>
 <rectangle x1="-0.2" y1="-0.6" x2="0.2" y2="0.6" layer="35"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="OSHW-LOGO-M">
+<polygon width="0.15" layer="21">
+<vertex x="0.6578" y="-1.588" curve="9.499253"/>
+<vertex x="0.9108" y="-1.4576"/>
+<vertex x="1.5392" y="-1.97"/>
+<vertex x="1.97" y="-1.5392"/>
+<vertex x="1.4576" y="-0.9108" curve="19.001165"/>
+<vertex x="1.6747" y="-0.3866"/>
+<vertex x="2.4814" y="-0.3047"/>
+<vertex x="2.4814" y="0.3047"/>
+<vertex x="1.6747" y="0.3866" curve="19.001165"/>
+<vertex x="1.4576" y="0.9108"/>
+<vertex x="1.97" y="1.5392"/>
+<vertex x="1.5392" y="1.97"/>
+<vertex x="0.9108" y="1.4576" curve="19.001165"/>
+<vertex x="0.3866" y="1.6747"/>
+<vertex x="0.3047" y="2.4814"/>
+<vertex x="-0.3047" y="2.4814"/>
+<vertex x="-0.3866" y="1.6747" curve="19.001165"/>
+<vertex x="-0.9108" y="1.4576"/>
+<vertex x="-1.5392" y="1.97"/>
+<vertex x="-1.97" y="1.5392"/>
+<vertex x="-1.4576" y="0.9108" curve="19.001165"/>
+<vertex x="-1.6747" y="0.3866"/>
+<vertex x="-2.4814" y="0.3047"/>
+<vertex x="-2.4814" y="-0.3047"/>
+<vertex x="-1.6747" y="-0.3866" curve="19.001165"/>
+<vertex x="-1.4576" y="-0.9108"/>
+<vertex x="-1.97" y="-1.5392"/>
+<vertex x="-1.5392" y="-1.97"/>
+<vertex x="-0.9108" y="-1.4576" curve="9.499253"/>
+<vertex x="-0.6578" y="-1.588"/>
+<vertex x="-0.299" y="-0.7218" curve="-67.507353"/>
+<vertex x="-0.7813" y="0" curve="-247.497552"/>
+<vertex x="0.299" y="-0.7218"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -486,8 +535,8 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="J1" library="LoganSmith-Connectors" package="RJ45-RJHSE" value="RJ45-RJHSE-5481" x="7.112" y="13.97" smashed="yes" rot="R270">
-<attribute name="LED1_COLOR" value="GRN" x="8.89" y="8.128" size="1.016" layer="51" font="vector" ratio="12" rot="R270" align="bottom-center"/>
-<attribute name="LED2_COLOR" value="YEL" x="8.89" y="19.685" size="1.016" layer="51" font="vector" ratio="12" rot="R270" align="bottom-center"/>
+<attribute name="LED1_COLOR" value="GRN" x="14.732" y="5.08" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="LED2_COLOR" value="YEL" x="11.811" y="5.08" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="2.286" y="13.97" size="1.016" layer="27" font="vector" ratio="12" rot="R270" align="bottom-center"/>
 </element>
 <element name="R1" library="LoganSmith-Resistors" package="0805-RES" value="1k" x="14.986" y="16.51" smashed="yes" rot="R270">
@@ -520,6 +569,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="J3" library="LoganSmith-Connectors" package="1X06_SQ1" value="M06SQ1" x="1.524" y="2.54" smashed="yes">
 <attribute name="VALUE" x="0.254" y="4.445" size="1" layer="27" font="vector" ratio="12"/>
 </element>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="OSHW-LOGOM" x="11.176" y="13.97" rot="MR270"/>
 </elements>
 <signals>
 <signal name="N$5">
@@ -639,20 +689,17 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$3">
 <contactref element="J2" pad="3"/>
-<contactref element="J1" pad="8"/>
-<wire x1="7.112" y1="17.526" x2="8.128" y2="18.542" width="0.254" layer="1"/>
-<wire x1="8.128" y1="18.542" x2="8.128" y2="22.86" width="0.254" layer="1"/>
-<wire x1="8.128" y1="22.86" x2="6.604" y2="24.384" width="0.254" layer="1"/>
-<wire x1="6.604" y1="24.384" x2="6.604" y2="25.4" width="0.254" layer="1"/>
+<contactref element="J1" pad="7"/>
+<wire x1="5.334" y1="16.51" x2="5.334" y2="17.526" width="0.254" layer="1"/>
+<wire x1="5.334" y1="17.526" x2="8.636" y2="20.828" width="0.254" layer="1"/>
+<wire x1="8.636" y1="20.828" x2="8.636" y2="23.368" width="0.254" layer="1"/>
+<wire x1="8.636" y1="23.368" x2="6.604" y2="25.4" width="0.254" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="J2" pad="4"/>
-<contactref element="J1" pad="7"/>
-<wire x1="5.334" y1="16.51" x2="7.874" y2="16.51" width="0.254" layer="1"/>
-<wire x1="7.874" y1="16.51" x2="8.636" y2="17.272" width="0.254" layer="1"/>
-<wire x1="8.636" y1="17.272" x2="8.636" y2="22.86" width="0.254" layer="1"/>
-<wire x1="8.636" y1="22.86" x2="9.144" y2="23.368" width="0.254" layer="1"/>
-<wire x1="9.144" y1="23.368" x2="9.144" y2="25.4" width="0.254" layer="1"/>
+<contactref element="J1" pad="8"/>
+<wire x1="7.112" y1="17.526" x2="9.144" y2="19.558" width="0.254" layer="1"/>
+<wire x1="9.144" y1="19.558" x2="9.144" y2="25.4" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
