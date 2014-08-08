@@ -19,14 +19,14 @@ The BOM is located in the release folder, all parts are sourced from Digi-Key.
 ## Project Structure
 
 This project adheres to this structure:
-	
+
 	[ProjectName]
 		README.md
 		[release]
 			[Major.Minor]
-				BOM.xls or BOM.csv
-				ProjectName-schematic_Major.Minor.pdf
-				ProjectName-board_Major.Minor.pdf
+				ProjectName_BOM_Major.Minor.xls or ProjectName_BOM_BOM_Major.Minor.csv
+				ProjectName_schematic_Major.Minor.pdf
+				ProjectName_board-<top/mid#/bottom>_Major.Minor.png
 				ProjectName_Major.Minor.sch
 				ProjectName_Major.Minor.brd
 				[Gerbers]
