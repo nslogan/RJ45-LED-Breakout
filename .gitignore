@@ -34,3 +34,7 @@ eagle.epf
 *.info
 
 *.eps
+
+# Microsoft Temporary Files Ignore
+
+~*
