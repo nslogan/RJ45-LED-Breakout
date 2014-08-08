@@ -186,6 +186,22 @@
 <text x="-5.715" y="1.778" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">&gt;LED2_COLOR</text>
 <wire x1="-8.255" y1="-7.112" x2="8.255" y2="-7.112" width="0.127" layer="51"/>
 <text x="5.842" y="1.778" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">&gt;LED1_COLOR</text>
+<wire x1="-5.334" y1="4.826" x2="-4.572" y2="4.826" width="0.127" layer="51"/>
+<wire x1="-5.334" y1="5.334" x2="-5.334" y2="4.826" width="0.127" layer="51"/>
+<wire x1="-5.334" y1="4.826" x2="-5.334" y2="4.318" width="0.127" layer="51"/>
+<wire x1="-5.334" y1="4.826" x2="-6.096" y2="5.334" width="0.127" layer="51"/>
+<wire x1="-6.096" y1="5.334" x2="-6.096" y2="4.826" width="0.127" layer="51"/>
+<wire x1="-6.096" y1="4.826" x2="-6.096" y2="4.318" width="0.127" layer="51"/>
+<wire x1="-6.096" y1="4.318" x2="-5.334" y2="4.826" width="0.127" layer="51"/>
+<wire x1="-6.858" y1="4.826" x2="-6.096" y2="4.826" width="0.127" layer="51"/>
+<wire x1="6.096" y1="4.826" x2="6.858" y2="4.826" width="0.127" layer="51"/>
+<wire x1="6.096" y1="5.334" x2="6.096" y2="4.826" width="0.127" layer="51"/>
+<wire x1="6.096" y1="4.826" x2="6.096" y2="4.318" width="0.127" layer="51"/>
+<wire x1="6.096" y1="4.826" x2="5.334" y2="5.334" width="0.127" layer="51"/>
+<wire x1="5.334" y1="5.334" x2="5.334" y2="4.826" width="0.127" layer="51"/>
+<wire x1="5.334" y1="4.826" x2="5.334" y2="4.318" width="0.127" layer="51"/>
+<wire x1="5.334" y1="4.318" x2="6.096" y2="4.826" width="0.127" layer="51"/>
+<wire x1="4.572" y1="4.826" x2="5.334" y2="4.826" width="0.127" layer="51"/>
 </package>
 <package name="SJ_2">
 <wire x1="0.37" y1="-0.916" x2="-1.27" y2="-0.916" width="0.125" layer="21"/>
@@ -257,6 +273,7 @@
 </packages>
 <symbols>
 <symbol name="RJ45_LED">
+<description>&lt;p&gt;Wiring color follows T568A&lt;/p&gt;</description>
 <pin name="GN/W" x="-17.78" y="-5.08" length="middle"/>
 <pin name="GN" x="-17.78" y="-2.54" length="middle"/>
 <pin name="OR/W" x="-17.78" y="0" length="middle"/>
@@ -4430,8 +4447,8 @@ Standard A4 size frame in Landscape</description>
 <part name="SJ1" library="LoganSmith-Connectors" deviceset="SJ_1WAY" device="" value=""/>
 <part name="SJ2" library="LoganSmith-Connectors" deviceset="SJ_1WAY" device="" value=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device=""/>
-<part name="J2" library="LoganSmith-Connectors" deviceset="M06?" device="SQ1"/>
-<part name="J3" library="LoganSmith-Connectors" deviceset="M06?" device="SQ1"/>
+<part name="J2" library="LoganSmith-Connectors" deviceset="M06?" device="SQ1" value=""/>
+<part name="J3" library="LoganSmith-Connectors" deviceset="M06?" device="SQ1" value=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 </parts>
 <sheets>
