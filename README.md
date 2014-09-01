@@ -4,6 +4,8 @@
 
 Simple breakout board for an RJ45 with LEDs. Has two 0805 resistor pads tied to Vin with pins for LED1/2-. Has solder pads for both shield legs to optionally tie to ground. Intended for use with Amphenol RJHSE-548x series. You can find [this project on GitHub](https://github.com/nslogan/RJ45-LED-Breakout). Fits breadboard well with headers 0.9" apart.
 
+![RJ45-LED-Breakout Kit](https://raw.githubusercontent.com/nslogan/RJ45-LED-Breakout/master/release/1.0/Photos/RJ45-LED-v1.0-kit-00.jpg)
+
 ## Production
 
 The board measured 0.65x1.20in (17x30mm) and was designed for production at [OSH Park](https://www.oshpark.com/). The OSHPark DRU is located in the `res/` folder.
